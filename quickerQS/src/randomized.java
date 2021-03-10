@@ -13,7 +13,6 @@ public class randomized {
     }
 
     public static int partition(double[] arr, int low, int high){
-        // double pivot = arr[low];
         Random rnd = new Random();
         double pivot = arr[low + rnd.nextInt(high - low)];
         int i = low+1;
@@ -47,7 +46,7 @@ public class randomized {
         int low = 0;
         int high = arr.length-1;
 
-        randomized(arr, low,high);
+       // randomized(arr, low,high);
         System.out.println(arr);
 
         //return arr;

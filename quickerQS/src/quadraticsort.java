@@ -1,7 +1,10 @@
+import java.util.Arrays;
+
 public class quadraticsort {
-    //insetion sort
-    public void quadraticsort (double [] arr, int left, int right){
-        for(int i = 1; i < arr.length; i++){
+    //the quadratic sorting method I chose to implement was insertion sort
+    //it is the overall better quadratic sorting method with a low run time average
+    public void quadraticsort (double [] arr, int low, int high){
+        for(int i = low+1; i < high; i++){
             double temp = arr[i];
             int j = i-1;
             while(j>=0 && arr[j] > temp){
@@ -16,10 +19,10 @@ public class quadraticsort {
         double[] arr;
         arr = new double[] {10,16,8,12,15,6,3,9,5};
         int low = 0;
-        int high = arr.length-1;
+        int high = arr.length;
         quadraticsort sort = new quadraticsort();
         sort.quadraticsort(arr, low,high);
-        System.out.println(arr);
+        System.out.println(Arrays.toString(arr));
 
     }
 }
