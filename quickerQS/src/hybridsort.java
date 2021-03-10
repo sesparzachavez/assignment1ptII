@@ -3,12 +3,13 @@ import java.util.Random;
 
 public class hybridsort {
     public void hybridsort (double [] arr, int low, int high){
+
         if(low < high){
-            if(high - low > 20){
+            if(high > 10){ //while the size of the array is larger than 10 it will use quicksort
                 int pivot = partition(arr, low, high);
                 hybridsort(arr, low, pivot);
                 hybridsort(arr,pivot+1, high);
-            }else{
+            }else{//when the array is smaller than 10 it will implement insertion sort
                 for(int i = low+1; i < high; i++){
                     double temp = arr[i];
                     int j = i-1;
@@ -52,7 +53,7 @@ public class hybridsort {
 
     public static void main(String args[]){
         double[] arr;
-        arr = new double[] {10,16,8,12,15,6,3,9,5,17};
+        arr = new double[] {10,16,8,12,15,6,3,9,5,15,30,21,4,2};
         int low = 0;
         int high = arr.length;
         hybridsort sort = new hybridsort();

@@ -1,0 +1,11 @@
+Run Time:
+
+Randomized -
+Quadratic -
+Hybrid -
+
+Space Time:
+Justification:
+I chose to use insertion sort becuse based on the data collected from part one of the project, insertion sort
+has a much better average time than selection or bubble sort - bubble sort having the worst average time. Insertion
+sort dealt with both small and big arrays better than selection or bubble.
