@@ -17,12 +17,8 @@ public class quadraticsort {
 
     }
     public static void main(String[] args){
-        int[] arrayLengths = {10000,20000,30000,40000,50000};
-        double[] arr = new double[arrayLengths[0]];
-        Random rd = new Random();
-        for(int i = 0; i < arrayLengths[0]; i++){
-            arr[i] = rd.nextInt();
-        }
+        double[] arr;
+        arr = new double[] {10,16,8,12,15,6,3,9,5};
 
         int low = 0;
         int high = arr.length;

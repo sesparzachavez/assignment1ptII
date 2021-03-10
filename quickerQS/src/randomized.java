@@ -5,6 +5,13 @@ public class randomized {
     public randomized() {
     }
 
+    /**
+     * this version of quickort picks a random pivot
+     * @param arr
+     * @param low
+     * @param high
+     */
+
     public static void randomized(double [] arr, int low, int high){
         if(low < high){
             int j = partition(arr, low,high);
@@ -42,15 +49,9 @@ public class randomized {
     }
 
     public static void main(String[] args) {
-//        double[] arr;
-//        arr = new double[] {10,16,8,12,15,6,3,9,5};
+        double[] arr;
+        arr = new double[] {10,16,8,12,15,6,3,9,5};
 
-        int[] arrayLengths = {10000,20000,30000,40000,50000};
-        double[] arr = new double[arrayLengths[0]];
-        Random rd = new Random();
-        for(int i = 0; i < arrayLengths[0]; i++){
-            arr[i] = rd.nextInt();
-        }
         int low = 0;
         int high = arr.length-1;
         System.out.println("Array before randomized quick sort: "+ Arrays.toString(arr));

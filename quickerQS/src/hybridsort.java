@@ -22,6 +22,7 @@ public class hybridsort {
             }
         }
     }
+    //partition returns where the partition will happen, or in other words, the sorted position of the pivot
     public static int partition(double[] arr, int low, int high){
         // double pivot = arr[low];
         Random rnd = new Random();
