@@ -1,10 +1,16 @@
 Run Time:
 
-Randomized -
-Quadratic -
-Hybrid -
+Randomized -Quicksort has a worst run time of O(n^2) although it is not likely to occur, and so, we go by its average running time
+            which is O(nlogn)
+Quadratic - Insertion sort, or the quadratic sorting algorithm has a run tim eof O(n^2).
+
+Hybrid - Since insertion sort is implemented, the worst case for Hybrid will be the same as insertion which is O(n^2).
 
 Space Time:
+Quicksort implements recursion, so they have O(nlog) for space complexity.
+
+Quadratic sorts take up O(1) space or constant space.
+
 Justification:
 I chose to use insertion sort becuse based on the data collected from part one of the project, insertion sort
 has a much better average time than selection or bubble sort - bubble sort having the worst average time. Insertion
